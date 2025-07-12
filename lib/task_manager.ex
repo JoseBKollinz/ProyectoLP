@@ -150,8 +150,8 @@ defmodule TaskManager do
   ## Auxiliares
 
   defp schedule_reminder do
-    # Programa un recordatorio cada 20 segundos
-    Process.send_after(self(), :recordatorio, 20_000)
+    # Programa un recordatorio cada 30 segundos
+    Process.send_after(self(), :recordatorio, 30_000)
   end
 
   defp save_tasks(tasks) do
